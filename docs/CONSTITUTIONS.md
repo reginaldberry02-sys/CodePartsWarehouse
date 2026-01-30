@@ -120,3 +120,30 @@
 
 12) Worked Examples
 12.1) TBD
+
+— Addendums —
+Addendum 2026-01-29
+
+13) Execution Scan Trigger Constitution
+
+13.1) Definition  
+The Execution Scan Trigger binds system scanning to execution events, referring executed artifacts to the annotation pipeline within applicable environments.
+
+13.2) Scope  
+The Execution Scan Trigger is reactive and environment-agnostic. It does not initiate execution and does not prevent execution.
+
+13.3) Limits  
+The Execution Scan Trigger does not interpret code, enforce policy, evaluate outcomes, or assign identity. It guarantees referral, not correctness, success, or compliance.
+
+⸻
+
+14) Capability Resolver Constitution
+
+14.1) Definition  
+The Capability Resolver assigns a capability label to CID-scoped code sections. A capability describes what a section of code is capable of doing, not what it ultimately produces.
+
+14.2) Role  
+The Capability Resolver operates during annotation and classification. It pairs each CID with a single capability label used for section identity, comparison, and standardization.
+
+14.3) Limits  
+The Capability Resolver does not execute code, define policy, or determine outcomes. It does not grant authority and does not alter code behavior..
