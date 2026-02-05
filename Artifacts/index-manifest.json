@@ -1,0 +1,52 @@
+{
+  "generated_at_utc": "2026-02-05T06:24:19Z",
+  "schema_version": 1,
+  "structural_signature": "bb2a44c4225cafc7f83ba89ad72c016b8059e0f86efc582dd26ee24360fc6a6f",
+  "source_db": "/Users/reginaldberry/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Chats/Projects/MacOS Automations/_state/registry.sqlite",
+  "table": "scan_events",
+  "item_count": 3,
+  "items": [
+    {
+      "artifact_type": "PYN",
+      "artifact_id": "TEST_PYN",
+      "use_env_last": null,
+      "capability": null,
+      "sid_count": 0,
+      "cid_count": 0,
+      "cid_sequence": null,
+      "code_hash_full": null,
+      "description": null,
+      "source_path": "Raw/PYN/TEST_PYN.py",
+      "explainer_path": "Raw/PYN/TEST_PYN.explainer.md",
+      "artifacts_path": "Artifacts/PY/unknown/SID-count_000/TEST_PYN/"
+    },
+    {
+      "artifact_type": "SID",
+      "artifact_id": "TEST_SID",
+      "use_env_last": null,
+      "capability": null,
+      "sid_count": 1,
+      "cid_count": 1,
+      "cid_sequence": null,
+      "code_hash_full": null,
+      "description": null,
+      "source_path": "Raw/SID/TEST_SID.py",
+      "explainer_path": "Raw/SID/TEST_SID.explainer.md",
+      "artifacts_path": "Artifacts/SID/unknown/CID-count_001/SEQ_NOSEQ/TEST_SID/"
+    },
+    {
+      "artifact_type": "CID",
+      "artifact_id": "TEST_CID",
+      "use_env_last": null,
+      "capability": "test_capability",
+      "sid_count": 0,
+      "cid_count": 0,
+      "cid_sequence": null,
+      "code_hash_full": null,
+      "description": null,
+      "source_path": "Raw/CID/TEST_CID.py",
+      "explainer_path": "Raw/CID/TEST_CID.explainer.md",
+      "artifacts_path": "Artifacts/CID/TEST_CID/CAP_test_capability/"
+    }
+  ]
+}

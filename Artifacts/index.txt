@@ -1,0 +1,16 @@
+ENV: unknown
+
+CID | id=TEST_CID | cap=test_capability
+  artifacts_path: Artifacts/CID/TEST_CID/CAP_test_capability/
+  source_path:    Raw/CID/TEST_CID.py
+  explainer_path: Raw/CID/TEST_CID.explainer.md
+
+PYN | id=TEST_PYN | sid_count=0 | cid_count=0
+  artifacts_path: Artifacts/PY/unknown/SID-count_000/TEST_PYN/
+  source_path:    Raw/PYN/TEST_PYN.py
+  explainer_path: Raw/PYN/TEST_PYN.explainer.md
+
+SID | id=TEST_SID | cid_count=1
+  artifacts_path: Artifacts/SID/unknown/CID-count_001/SEQ_NOSEQ/TEST_SID/
+  source_path:    Raw/SID/TEST_SID.py
+  explainer_path: Raw/SID/TEST_SID.explainer.md
