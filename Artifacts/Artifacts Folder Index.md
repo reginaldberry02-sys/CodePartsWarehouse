@@ -77,7 +77,7 @@
 
 ### 4.1 Structure  
 
-4.1.1 The SID view uses three decision levels beneath `SID/`.  
+4.1.1 The SID view uses four decision levels beneath `SID/`.  
 4.1.2 The structure is:
 
     Artifacts/
@@ -85,12 +85,14 @@
         <env>/
           CID-count_<nnn>/
             <cid-sequence-pattern>/
+              <sid-id>/
 
 4.1.3 Level 1 is `SID`.  
 4.1.4 Level 2 is `<env>`, the execution environment.  
 4.1.5 Level 3 is `CID-count_<nnn>`, a bucket keyed by the number of CIDs associated with a SID in that environment.  
 4.1.6 Level 4 is `<cid-sequence-pattern>`, a bucket keyed by the exact ordered sequence of CIDs associated with that SID in that environment.  
-4.1.7 No additional folder nesting is defined by this specification beneath `<cid-sequence-pattern>/` in the SID view.
+4.1.7 Level 5 is `<sid-id>`, the specific SID identity that belongs to that CID sequence bucket.  
+4.1.8 No additional folder nesting is defined by this specification beneath `<sid-id>/` in the SID view.
 
 ### 4.2 Environment (`<env>`)  
 
@@ -148,13 +150,17 @@
         macos/
           CID-count_003/
             CID-seq_cid_abcd1234_cid_bbbb2222_cid_cccc3333/
+              <sid-id-1>/
+              <sid-id-2>/
             CID-seq_cid_x1111111_cid_y2222222_cid_z3333333/
+              <sid-id-3>/
 
 4.4.6 All SIDs under `CID-seq_cid_abcd1234_cid_bbbb2222_cid_cccc3333/` share the same ordered CID list:
 
     [cid_abcd1234, cid_bbbb2222, cid_cccc3333]
 
-4.4.7 This view is intended to identify structurally identical sections across different files or repositories, where structure is defined by the ordered sequence of CIDs in a given environment.
+4.4.7 Each `<sid-id>/` folder within a given `<cid-sequence-pattern>/` corresponds to a single SID that matches that CID sequence in that environment.  
+4.4.8 This view is intended to identify structurally identical sections across different files or repositories, while still preserving a per-SID identity at the deepest level.
 
 ## 5. CID View (`Artifacts/CID`)  
 
